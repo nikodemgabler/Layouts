@@ -40,6 +40,8 @@
 .third-section .third-section-article .third-section-photo img {
     width: 100%;
     height: 100%;
+    text-align:center;  
+    vertical-align:top;
     transition: all .2s ease-in-out;
 }
 
@@ -84,6 +86,11 @@
     justify-content: start;
     font-weight: bold;
     align-content: center;
+}
+
+.author{
+    padding-bottom: 0px;
+    margin-bottom: 100px;
 }
 
 .author img {

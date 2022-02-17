@@ -1,0 +1,329 @@
+
+.fifth-section {
+    padding-top: 10vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fifth-section  header {
+    margin-bottom: 2rem;
+    line-height: 40px;
+}
+
+.fifth-section header p {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: Arial;
+    color: rgb(143, 143, 143);
+    opacity: 0.1;
+}
+
+.fifth-section .fifth-section-article {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 80%
+}
+
+.fifth-section .fifth-section-article .fifth-section-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 35px;
+
+}
+
+.fifth-section  .fifth-section-article .fifth-section-photo img {
+    width: 100%;
+    height: 100%;
+    text-align:center;  
+    vertical-align:top;
+    transition: all .2s ease-in-out;
+    align-self: flex-start;
+}
+
+.fifth-section  .fifth-section-article .fifth-section-photo img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+} 
+
+/*  */
+.fifth-section .fifth-section-article .category-types {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    "business  innovation"
+    "expertise expertise";
+}
+
+.fifth-section .fifth-section-article .category-types .innovation {
+    grid-area: innovation;
+    width: 135px;
+}
+
+.fifth-section  .fifth-section-article .category-types .business {
+    grid-area: business;
+    width: 150px;
+}
+
+.fifth-section  .fifth-section-article .category-types .expertise {
+    grid-area: expertise;
+    width: 135px;
+}
+
+.fifth-section  .fifth-section-article2 .category-types .tech {
+    grid-area: tech;
+    width: 150px;
+}
+
+.fifth-section .fifth-section-article2 .category-types {
+    display: grid;
+    grid-template-areas:
+    "tech tech business"
+}
+
+.fifth-section  .fifth-section-article2 .category-types .expertise {
+    width: 100%;
+    grid-area: expertise;
+    margin: 0;
+}
+
+
+.fifth-section  .fifth-section-article .category-types .expertise:hover {
+    color: #4cc9f0
+}
+
+.fifth-section  .fifth-section-article .category-types .innovation:hover {
+    color: #bc9c5f
+}
+.fifth-section  .fifth-section-article .category-types .business:hover {
+    color: #fac303    
+}
+
+.fifth-section  .fifth-section-article2 .category-types, .fifth-section  .fifth-section-article3 .category-types{
+    display: block;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.fifth-section  .fifth-section-article2 .category-types .expertise,
+.fifth-section  .fifth-section-article3 .category-types {
+    margin-left: 20px;
+}
+
+.fifth-section  .fifth-section-article3 .category-types .innovation{
+    margin-left: -20px;
+}
+
+.fifth-section  .fifth-section-article .category-type{
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color:#878787;
+
+}
+.fifth-section  .fifth-section-article .category-type:hover {
+    color: #3f89ff;
+}
+
+.fifth-section  .fifth-section-article .title {
+    display: block;
+    font-family: arial;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.fifth-section  .fifth-section-article .title:hover{
+    color: #00d563;
+    transition: .2s ease-in-out;
+}
+
+.fifth-section  .fifth-section-article .author {
+    height: 55px;
+    display: grid;
+    grid-template-areas:
+    "photo name name"
+    "photo time time";
+    justify-content: start;
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.fifth-section  .fifth-section-article .author img {
+    grid-area: photo;
+    margin-right: 15px;
+    width: 55px;
+    height: 45px;
+    margin-bottom: 12px;
+}
+
+.fifth-section  .fifth-section-article .author .author-name {
+    grid-area: name;
+    display: block;
+    height: 20px;
+    margin-top:3px;
+    border-bottom: 1px solid #00d563;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.fifth-section  .fifth-section-article .author .author-name:hover {
+    border-bottom: 3px solid #00d563;
+    margin-top: -0.5px;
+}
+
+.fifth-section  .fifth-section-article .author .author-time {
+    grid-area: time;
+    color: gray;
+    font-weight: lighter;
+    font-size: 13px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 508px) {
+    .fifth-section  .fifth-section-article .category-types{
+
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "innovation business expertise";
+    }
+    .fifth-section  .fifth-section-article .category-types .category-type {
+        margin: 0;
+    }
+
+    .fifth-section  .fifth-section-article2 .category-types,     .fifth-section  .fifth-section-article3 .category-types{
+        display: block;
+        margin-left: 0;
+    }
+    .fifth-section  .fifth-section-article2 .category-types .expertise, .fifth-section  .fifth-section-article3 .category-types .expertise {
+        margin-left: 30px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 590px) { 
+    
+    .fifth-section  {
+        justify-items: center;
+        width: 531px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    
+    .fifth-section  {
+        width: 590px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .fifth-section  {
+        width: 920px;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-around;
+        grid-template-areas: 
+        "header header";
+    }
+
+    .fifth-section  header {
+        grid-area: header;
+        width: 920px;
+        margin-bottom: 1vh;
+    }
+
+    .fifth-section  header .header-main{
+        width: 450px;
+    }
+
+    .fifth-section  .fifth-section-article .fifth-section-photo{
+        box-sizing: border-box;
+        width: 450px;
+        height: 255px;
+    } 
+
+    .fifth-section  .fifth-section-article .category-types{
+        height: 4px;
+    }
+
+    .fifth-section  .fifth-section-article3 {
+        height: 100%;
+    }
+
+
+
+} 
+
+
+@media screen and (min-width: 1366px) {
+
+    .fifth-section {
+    width: 1250px;
+    grid-template-areas: 
+    "header header header";
+    grid-gap: 5px;
+}
+
+    .fifth-section  header{
+        width: 1250px;
+    }
+
+    .fifth-section  header .header-main{
+        width: 450px;
+    }
+
+    .fifth-section  .fifth-section-article {
+        width: 384px;
+    }
+
+    .fifth-section  .fifth-section-article .fifth-section-photo {
+        width: 384px;
+        height: 204px;
+      }
+
+      .fifth-section  .fifth-section-article .title {
+        margin-top: 45px;
+      }
+
+      .fifth-section  .fifth-section-article1 .category-types {
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-areas:
+        "innovation  business"
+        "expertise expertise";
+    }
+
+    .fifth-section  .fifth-section-article1 .category-types .expertise{
+        margin-top: 4px;
+    }
+}

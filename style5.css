@@ -26,13 +26,13 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    height: 80%
+    height: 100%
 }
 
 .fifth-section .fifth-section-article .fifth-section-photo {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 25vh;
     overflow: hidden;
     border-radius: 8px;
     margin-top: 35px;
@@ -45,7 +45,6 @@
     text-align:center;  
     vertical-align:top;
     transition: all .2s ease-in-out;
-    align-self: flex-start;
 }
 
 .fifth-section  .fifth-section-article .fifth-section-photo img:hover {
@@ -80,9 +79,13 @@
     width: 135px;
 }
 
-.fifth-section  .fifth-section-article2 .category-types .tech {
+.fifth-section  .fifth-section-article .category-types .tech {
     grid-area: tech;
-    width: 150px;
+    width: 110px;
+}
+
+.fifth-section  .fifth-section-article2 .category-types .tech:hover {
+    color: #F48E41
 }
 
 .fifth-section .fifth-section-article2 .category-types {
@@ -91,12 +94,16 @@
     "tech tech business"
 }
 
-.fifth-section  .fifth-section-article2 .category-types .expertise {
-    width: 100%;
-    grid-area: expertise;
+.fifth-section  .fifth-section-article .category-types .expertise {
     margin: 0;
 }
 
+.fifth-section  .fifth-section-article2 .category-types .business {
+    margin-left: 20px;
+}
+.fifth-section .fifth-section-article .category-types, .fifth-section .fifth-section-article .category-types .expertise{
+    margin-left: 0 !important;
+}
 
 .fifth-section  .fifth-section-article .category-types .expertise:hover {
     color: #4cc9f0
@@ -200,27 +207,20 @@
 
 
 @media screen and (min-width: 508px) {
-    .fifth-section  .fifth-section-article .category-types{
-
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-        "innovation business expertise";
-    }
-    .fifth-section  .fifth-section-article .category-types .category-type {
-        margin: 0;
+    .fifth-section  .fifth-section-article2 .category-types, .fifth-section  .fifth-section-article1 .category-types {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .fifth-section  .fifth-section-article2 .category-types,     .fifth-section  .fifth-section-article3 .category-types{
-        display: block;
+    .fifth-section  .fifth-section-article1 .category-types {
+        width: 60%;
+    }
+
+    .fifth-section  .fifth-section-article2 .category-types .business {
         margin-left: 0;
     }
-    .fifth-section  .fifth-section-article2 .category-types .expertise, .fifth-section  .fifth-section-article3 .category-types .expertise {
-        margin-left: 30px;
-    }
-
-
-
+    
 }
 
 
@@ -231,6 +231,10 @@
         width: 531px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .fifth-section  .fifth-section-article3 .category-types .expertise{
+        margin-left: 0;
     }
 }
 
@@ -264,6 +268,16 @@
         width: 450px;
     }
 
+    .fifth-section  .fifth-section-article2 .category-types, .fifth-section  .fifth-section-article1 .category-types {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fifth-section  .fifth-section-article1 .category-types {
+        width: 70%;
+    }
+
     .fifth-section  .fifth-section-article .fifth-section-photo{
         box-sizing: border-box;
         width: 450px;
@@ -277,8 +291,9 @@
     .fifth-section  .fifth-section-article3 {
         height: 100%;
     }
-
-
+    .fifth-section .fifth-section-article .title {
+        margin-top: 25px;
+      }
 
 } 
 
@@ -302,6 +317,7 @@
 
     .fifth-section  .fifth-section-article {
         width: 384px;
+        height: 100%;
     }
 
     .fifth-section  .fifth-section-article .fifth-section-photo {
@@ -309,13 +325,9 @@
         height: 204px;
       }
 
-      .fifth-section  .fifth-section-article .title {
-        margin-top: 45px;
-      }
-
       .fifth-section  .fifth-section-article1 .category-types {
         margin-top: 30px;
-        width: 100%;
+        width: 80%;
         display: grid;
         grid-gap: 0px;
         grid-template-areas:
@@ -326,4 +338,17 @@
     .fifth-section  .fifth-section-article1 .category-types .expertise{
         margin-top: 4px;
     }
+
+
+    .fifth-section  .fifth-section-article2 .category-types {
+        margin-top: 30px;
+        width: 85%;
+        display: grid;
+        grid-template-areas:
+        "business expertise"
+        "tech tech"
+        ;
+    }
+
+
 }

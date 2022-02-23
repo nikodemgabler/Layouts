@@ -1,0 +1,72 @@
+.seventh-section {
+    display: grid;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.seventh-section .rocket-img {
+    width: 90%;
+    max-width: 540px;
+    height: 740px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("images/rocket.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seventh-section header {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seventh-section header h1 {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 34px;
+}
+
+.seventh-section header span{
+    font-size: 16px;
+    color: rgb(139, 139, 139);
+}
+
+.seventh-section form {
+    margin-top: 45px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-areas:
+    "f-name l-name"
+    "i-f-name i-l-name"
+    "email email"
+    "i-email i-email";
+}
+
+.seventh-section form .f-name { 
+    grid-row: f-name;
+    padding-bottom: 10px;
+}
+.seventh-section form .l-name {
+    grid-row: l-name
+}
+
+
+
+
+.seventh-section form .email { grid-row: email }
+.seventh-section form .i-f-name { grid-row: i-f-name }
+.seventh-section form .i-l-name {grid-row: i-l-name }
+.seventh-section form .i-email { grid-row: i-email; width: 190%; }
+
+.seventh-section form .i-f-name, .seventh-section form .i-l-name {
+    width: 90%;
+}
+ 

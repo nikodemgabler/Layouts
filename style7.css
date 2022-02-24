@@ -10,13 +10,17 @@
 .seventh-section .rocket-img {
     width: 90%;
     max-width: 540px;
-    height: 740px;
-
+    height: 660px;
     margin-left: auto;
     margin-right: auto;
     background-image: url("images/rocket.webp");
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 40px;
+    outline: auto;
+    outline-style: round;
+    outline-color: #f7f7f7;
+    border-radius: 3%;
 }
 
 .seventh-section header {
@@ -31,7 +35,7 @@
     font-size: 34px;
 }
 
-.seventh-section header span{
+.seventh-section span{
     font-size: 16px;
     color: rgb(139, 139, 139);
 }
@@ -41,32 +45,68 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    display: grid;
-    grid-template-areas:
-    "f-name l-name"
-    "i-f-name i-l-name"
-    "email email"
-    "i-email i-email";
+.seventh-section form h3 {
+    display: block;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b4b4b;
+    padding: 20px 0px 10px 0px;
+    width: 50%;
+}
+
+.seventh-section form input {
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.seventh-section form input:focus {
+    outline: none;
+    border: 1px solid #00D563;
+}
+
+.seventh-section form .i-f-name, .seventh-section form .i-l-name {
+    box-sizing: border-box;
+    width: 100%;
+    
 }
 
 .seventh-section form .f-name { 
-    grid-row: f-name;
-    padding-bottom: 10px;
+    grid-area: f-name;
+}
+.seventh-section form .i-f-name { 
+    grid-area: i-f-name; 
 }
 .seventh-section form .l-name {
-    grid-row: l-name
+    grid-area: l-name;
+}
+.seventh-section form .i-l-name {
+    grid-area: i-l-name;
+}
+.seventh-section form .email {  
+    grid-area: email ;
+}
+.seventh-section form .i-email { 
+    grid-area: i-email;
+     width: 100%; 
+    margin-bottom: 30px;
+}
+.seventh-section form .policy {
+    grid-area: policy;
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: #4b4b4b;
 }
 
-
-
-
-.seventh-section form .email { grid-row: email }
-.seventh-section form .i-f-name { grid-row: i-f-name }
-.seventh-section form .i-l-name {grid-row: i-l-name }
-.seventh-section form .i-email { grid-row: i-email; width: 190%; }
-
-.seventh-section form .i-f-name, .seventh-section form .i-l-name {
-    width: 90%;
+.seventh-section form button {
+    grid-area: button;
+    padding: 16px;
+    background: #00D563;
+    color: white;
+    border: 0;
+    border-radius: 6px;
 }
- 
+

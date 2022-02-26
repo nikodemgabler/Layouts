@@ -1,5 +1,6 @@
 .seventh-section {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     width: 100%;
     height: 100%;
@@ -21,12 +22,17 @@
     outline-style: round;
     outline-color: #f7f7f7;
     border-radius: 3%;
+<<<<<<< HEAD
+=======
+    grid-area: rocket;
+>>>>>>> netguru-layout
 }
 
 .seventh-section header {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    grid-area: header;
 }
 
 .seventh-section header h1 {
@@ -47,6 +53,7 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
 }
 
 .seventh-section form h3 {
@@ -72,7 +79,32 @@
     box-sizing: border-box;
     width: 100%;
     
+=======
+    grid-area: form;
+>>>>>>> netguru-layout
 }
+
+.seventh-section form h3 {
+    display: block;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b4b4b;
+    padding: 20px 0px 10px 0px;
+    width: 50%;
+}
+
+.seventh-section form input {
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 8px;
+}
+.seventh-section form input:focus {
+    outline: none;
+    border: 1px solid #00D563;
+}
+
+
 
 .seventh-section form .f-name { 
     grid-area: f-name;
@@ -99,6 +131,7 @@
     font-size: 13px;
     margin-bottom: 30px;
     color: #4b4b4b;
+<<<<<<< HEAD
 }
 
 .seventh-section form button {
@@ -110,3 +143,125 @@
     border-radius: 6px;
 }
 
+=======
+}
+
+.seventh-section form button {
+    grid-area: button;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px;
+    background: #00D563;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.seventh-section form button:hover {
+    background: #009b48;
+}
+
+
+@media screen and (min-width: 456px) {
+
+    .seventh-section header {
+        max-width: 540px;
+    }
+
+    .seventh-section form {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 540px;
+        display: grid;
+        grid-template-areas:
+        "f-name l-name"
+        "i-f-name i-l-name"
+        "email email"
+        "i-email i-email"
+        "policy policy"
+        "button button";
+    }
+
+    .seventh-section form .i-f-name {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .seventh-section .rocket-img, .seventh-section header, .seventh-section form {
+        max-width: 680px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .seventh-section {
+        display: grid;
+        grid-template-columns: 1 / 3;
+        grid-template-rows: 1 / 3;
+        box-sizing: border-box;
+        width: 100vw;
+        margin-right: 40%;
+    }
+
+    .seventh-section .rocket-img{
+        max-width: 740px;
+        height: 740px;
+        grid-column: 1;
+        grid-row: 1 / 3;
+        outline: none;
+    }
+    
+    .seventh-section form {
+        grid-column: 2;
+        grid-row: 2 / 3;
+        grid-template-areas: 
+        "f-name l-name"
+        "i-f-name i-l-name"
+        "email email"
+        "i-email i-email"
+        "policy policy"
+        "button button";
+        width: 430px;
+        height: 280px;
+        margin: 0;
+        padding-bottom: 150px;
+        padding-left: 20px;
+    }
+
+    .seventh-section header {
+        width: 95%;
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 20px;
+
+        grid-column: 2;
+        grid-row: 1 / 2;
+    }
+
+    .seventh-section .rocket-img {
+        width: 50vw;
+        transform: scale(1.1);
+    }
+
+    .button {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1566px) {
+
+    .seventh-section .rocket-img {
+        width: 60vw;
+        transform: scale(1.1);
+    }
+
+    .seventh-section form, .seventh-section header {
+        padding-right: 180px;
+    }
+
+
+}
+>>>>>>> netguru-layout

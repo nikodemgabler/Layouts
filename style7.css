@@ -198,7 +198,7 @@
 
     .seventh-section .rocket-img {
         width: 50vw;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     .button {

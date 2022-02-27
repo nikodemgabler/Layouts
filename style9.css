@@ -1,0 +1,82 @@
+.page-bottom {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    color: #4b4b4b;
+    line-height: 22px;
+}
+
+.page-bottom header {
+    margin: 20px 0 20px 0;
+}
+
+.page-bottom .footer-first-wrapper {
+    width: 40%;
+}
+
+.page-bottom .footer-first-wrapper h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.page-bottom .footer-first-wrapper a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.page-bottom .footer-first-wrapper a:hover {
+    text-decoration: none;
+    color: #00d563;
+}
+
+.page-bottom .footer-first-wrapper .company-data {
+    display: block;
+    margin-top: 20px;
+}
+
+
+.page-bottom .footer-first-wrapper .follow-us-wrapper {
+    display: grid;
+    grid-template-areas:
+    "h2 h2 h2"
+    "be dr fb"
+    "gh in tw";
+    width: 300px;
+}
+
+.page-bottom .footer-first-wrapper .follow-us-wrapper h2 {grid-area: h2}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .be {grid-area: be}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .dr {grid-area: dr}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .fb {grid-area: fb}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .gh {grid-area: gh}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .in {grid-area: in}
+.page-bottom .footer-first-wrapper .follow-us-wrapper .tw {grid-area: tw}
+
+
+.page-bottom .footer-second-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-bottom .footer-second-wrapper h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.page-bottom .footer-second-wrapper .corporation {width: 65px; height: 90px; }
+.page-bottom .footer-second-wrapper .place {width: 55px; height: 80px;}
+.page-bottom .footer-second-wrapper .security {width: 65px; height: 65px;}
+.page-bottom .footer-second-wrapper .aws {width: 55px; height: 30px;}
+.page-bottom .footer-second-wrapper .microsoft {width: 120px; height: 30px;}
+.page-bottom .footer-second-wrapper .adyen {width: 70px; height: 30px;}
+
+.page-bottom .footer-second-wrapper span {
+    padding: 10px 0 20px 0;
+    width: 70%;
+    font-size: 11px;
+}

@@ -1,0 +1,94 @@
+.eighth-section {
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    width: 100vw;
+    height: 100%;
+}
+
+.eighth-section .eighth-section-box {
+    display: grid;
+    width: 90%;
+    grid-template-columns: auto auto;
+    padding: 80px 5% 5% 5%;
+}
+
+.eighth-section .eighth-section-box ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.eighth-section .eighth-section-box ul li { 
+    font-size: 12px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.eighth-section .eighth-section-box ul li a { 
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+.eighth-section .eighth-section-box ul li h2 { 
+    margin: 20px 0 20px 0;
+}
+
+.eighth-section .eighth-section-box ul li h2 a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+
+
+@media screen and (min-width: 590px) {
+    .eighth-section .eighth-section-box {
+       width: 540px;
+       margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .eighth-section .eighth-section-box {
+       width: 680px;
+       grid-template-areas:
+       "services reports publications"
+       "industries insights aboutus"
+       "clients clients join-netguru";
+    }
+
+    .eighth-section .eighth-section-box .services {grid-area: services; } 
+    .eighth-section .eighth-section-box .industries {grid-area: industries;}
+    .eighth-section .eighth-section-box .clients {grid-area: clients;}
+    .eighth-section .eighth-section-box .reports {grid-area: reports;}
+    .eighth-section .eighth-section-box .insights {grid-area: insights;}
+    .eighth-section .eighth-section-box .publications {grid-area: publications;}
+    .eighth-section .eighth-section-box .aboutus {grid-area: aboutus;}
+    .eighth-section .eighth-section-box .join-netguru {grid-area: join-netguru;}
+    .eighth-section .eighth-section-box .join-netguru, .eighth-section .eighth-section-box .aboutus, .eighth-section .eighth-section-box .insights, .eighth-section .eighth-section-box .clients {margin-top: -60px;}
+}
+
+@media screen and (min-width: 1024px) {
+    .eighth-section .eighth-section-box {
+        width: 920px;
+    }
+
+    .eighth-section .eighth-section-box ul li, .eighth-section .eighth-section-box ul li h2 a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .eighth-section .eighth-section-box {
+        width: 1200px;
+        grid-template-areas:
+        "services clients insights aboutus"
+        "industries reports publications join-netguru";
+    }
+    
+    .eighth-section .eighth-section-box .aboutus, .eighth-section .eighth-section-box .insights, .eighth-section .eighth-section-box .clients {margin-top: 0px;}
+
+    .eighth-section .eighth-section-box .reports {margin-top: -120px;}
+
+}

@@ -1,7 +1,10 @@
 .eighth-section {
     box-sizing: border-box;
     background-color: #f7f7f7;
+<<<<<<< HEAD
     width: 100vw;
+=======
+>>>>>>> main
     height: 100%;
 }
 
@@ -9,7 +12,11 @@
     display: grid;
     width: 90%;
     grid-template-columns: auto auto;
+<<<<<<< HEAD
     padding: 80px 5% 5% 5%;
+=======
+    padding: 60px 0 30px 5%;
+>>>>>>> main
 }
 
 .eighth-section .eighth-section-box ul {
@@ -27,8 +34,20 @@
 .eighth-section .eighth-section-box ul li a { 
   text-decoration: none;
   color: #4b4b4b;
+<<<<<<< HEAD
 }
 
+=======
+  transition: .1s ease-in-out;
+}
+
+.eighth-section .eighth-section-box ul li a:hover { 
+    text-decoration: none;
+    color: #00d563;
+    padding-left: 6px;
+  }
+
+>>>>>>> main
 .eighth-section .eighth-section-box ul li h2 { 
     margin: 20px 0 20px 0;
 }
@@ -39,6 +58,14 @@
     font-size: 12px;
 }
 
+<<<<<<< HEAD
+=======
+.eighth-section .eighth-section-box ul li h2 a:hover {
+    color: #00d563;
+    padding-left: 0;
+}
+
+>>>>>>> main
 
 
 

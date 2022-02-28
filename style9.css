@@ -2,6 +2,7 @@
     font-size: 12px;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     margin-left: 5%;
     color: #4b4b4b;
     line-height: 22px;
@@ -9,10 +10,26 @@
 
 .page-bottom header {
     margin: 20px 0 20px 0;
+=======
+    box-sizing: border-box;
+    color: #4b4b4b;
+    line-height: 22px;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-bottom header {
+    margin: 40px 0 0 0;
+    padding-left: 5%;
+>>>>>>> main
 }
 
 .page-bottom .footer-first-wrapper {
     width: 40%;
+<<<<<<< HEAD
+=======
+    padding-left: 5%;
+>>>>>>> main
 }
 
 .page-bottom .footer-first-wrapper h2 {
@@ -22,12 +39,22 @@
     color: black;
 }
 
+<<<<<<< HEAD
 .page-bottom .footer-first-wrapper a {
     text-decoration: none;
     color: #4b4b4b;
 }
 
 .page-bottom .footer-first-wrapper a:hover {
+=======
+.page-bottom .footer-first-wrapper .company-address a, .page-bottom .footer-first-wrapper .contact a{
+    text-decoration: none;
+    color: #4b4b4b;
+    transition: .1s ease-in-out;
+}
+
+.page-bottom .footer-first-wrapper .company-address a:hover {
+>>>>>>> main
     text-decoration: none;
     color: #00d563;
 }
@@ -37,6 +64,18 @@
     margin-top: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.page-bottom .footer-first-wrapper .contact a{
+    border-bottom: 1px solid #00d563;
+    padding-bottom: 2px;
+    transition: none;
+    text-align: start;
+}
+.page-bottom .footer-first-wrapper .contact a:hover{
+    border-bottom: 3px solid #00d563;
+}
+>>>>>>> main
 
 .page-bottom .footer-first-wrapper .follow-us-wrapper {
     display: grid;
@@ -46,6 +85,33 @@
     "gh in tw";
     width: 300px;
 }
+<<<<<<< HEAD
+=======
+.page-bottom .footer-first-wrapper .follow-us-wrapper a{
+    width: 20px;
+    height: 20px;
+    padding-bottom: 15px;
+}
+
+.page-bottom .footer-first-wrapper .follow-us-wrapper a svg{
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.be{background-image: url('images/be.svg')}
+.dr{background-image: url('images/dr.svg')}
+.fb{background-image: url('images/fb.svg')}
+.gh{background-image: url('images/gh.svg')}
+.in{background-image: url('images/in.svg')}
+.tw{background-image: url('images/tw.svg')}
+
+.page-bottom .footer-first-wrapper .follow-us-wrapper a svg:hover {filter: invert(50%) sepia(84%) saturate(1292%) hue-rotate(108deg) brightness(102%) contrast(101%);}
+
+>>>>>>> main
 
 .page-bottom .footer-first-wrapper .follow-us-wrapper h2 {grid-area: h2}
 .page-bottom .footer-first-wrapper .follow-us-wrapper .be {grid-area: be}
@@ -68,15 +134,284 @@
     color: black;
 }
 
+<<<<<<< HEAD
 .page-bottom .footer-second-wrapper .corporation {width: 65px; height: 90px; }
 .page-bottom .footer-second-wrapper .place {width: 55px; height: 80px;}
 .page-bottom .footer-second-wrapper .security {width: 65px; height: 65px;}
 .page-bottom .footer-second-wrapper .aws {width: 55px; height: 30px;}
 .page-bottom .footer-second-wrapper .microsoft {width: 120px; height: 30px;}
 .page-bottom .footer-second-wrapper .adyen {width: 70px; height: 30px;}
+=======
+.page-bottom .footer-second-wrapper .corporation {width: 65px; height: 90px; grid-area: corporation;}
+.page-bottom .footer-second-wrapper .place {width: 55px; height: 80px; grid-area: place;}
+.page-bottom .footer-second-wrapper .security {width: 65px; height: 65px; grid-area: security;}
+.page-bottom .footer-second-wrapper .aws {width: 55px; height: 40px; grid-area: aws;}
+.page-bottom .footer-second-wrapper .microsoft {width: 120px; height: 30px; grid-area: microsoft;}
+.page-bottom .footer-second-wrapper .adyen {width: 70px; height: 30px; grid-area: adyen;} 
+
+.page-bottom .footer-second-wrapper .corporation-span {grid-area: corporation-span;}
+.page-bottom .footer-second-wrapper .place-span {grid-area: place-span;}
+.page-bottom .footer-second-wrapper .security-span {grid-area: security-span;}
+.page-bottom .footer-second-wrapper .aws-span {grid-area: aws-span;}
+.page-bottom .footer-second-wrapper .microsoft-span {grid-area: microsoft-span;}
+.page-bottom .footer-second-wrapper .adyen-span {grid-area: adyen-span;} 
+>>>>>>> main
 
 .page-bottom .footer-second-wrapper span {
     padding: 10px 0 20px 0;
     width: 70%;
     font-size: 11px;
+<<<<<<< HEAD
+=======
+}
+
+
+.page-bottom aside {
+    background: #f7f8f7;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+.page-bottom aside .footer-aside-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.page-bottom aside .footer-aside-wrapper img {
+    padding: 12px;
+}
+
+.page-bottom footer {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.page-bottom footer ul {
+    display: grid;
+    grid-template-columns: 75px 70px 70px;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px 40px 0px 40px;
+}
+
+.page-bottom footer ul li {
+    width: 100%;
+}
+
+.page-bottom footer ul li a, .page-bottom footer .copyright{
+    text-decoration: none;
+    color: #646464;
+}
+
+.page-bottom footer .copyright {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.page-bottom footer ul li a:hover {
+    color: #00d563;
+}
+
+@media screen and (min-width: 590px) {
+    .page-bottom header{
+        display: block;
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 2%;
+    }
+
+    .page-bottom .footer-first-wrapper {
+        display: grid;
+        grid-template-areas: 
+        "netguru-h2 contact-h2"
+        "address contact"
+        "data contact"
+        "follow follow"
+        "hr hr"
+        "second second";
+        justify-content: space-between;
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-bottom .footer-first-wrapper .netguru-h2 {grid-area: netguru-h2}
+    .page-bottom .footer-first-wrapper .company-address {grid-area: address}
+    .page-bottom .footer-first-wrapper .company-data {grid-area: data}
+    .page-bottom .footer-first-wrapper .contact-h2 {grid-area: contact-h2; width: 100%; margin-right: 10vw;}
+    .page-bottom .footer-first-wrapper .contact {grid-area: contact}
+    .page-bottom .footer-first-wrapper hr {display: none;}
+    .page-bottom .footer-first-wrapper .follow-us-wrapper {grid-area: follow;}
+
+    .page-bottom .footer-first-wrapper .footer-second-wrapper {
+        display: grid;
+        grid-area: second;
+        grid-template-areas:
+        "certificates certificates"
+        "corporation place"
+        "corporation-span place-span"
+        "security security"
+        "security-span security-span"
+        "partnerships partnerships"
+        "aws microsoft"
+        "aws-span microsoft-span"
+        "adyen adyen"
+        "adyen-span adyen-span";
+        width: 540px;
+    }
+
+    .page-bottom .footer-first-wrapper h2, .page-bottom .footer-first-wrapper .footer-second-wrapper h2 {font-size: 18px;}
+    .page-bottom .footer-first-wrapper .footer-second-wrapper h2:first-child {grid-area: certificates; margin-top: 50px;}
+    .page-bottom .footer-first-wrapper .footer-second-wrapper h2:last-child {grid-area: partnerships}
+    .page-bottom .footer-first-wrapper .footer-second-wrapper span {width: 140px; font-size: 12px;}
+    .page-bottom footer {width: 400px; margin-left: auto; margin-right: auto;}
+    
+}
+
+@media screen and (min-width: 768px) { 
+
+    .page-bottom header, .page-bottom .footer-first-wrapper, .page-bottom .footer-first-wrapper .footer-second-wrapper{
+        width: 680px;
+    }
+
+    .page-bottom .footer-first-wrapper {
+        grid-template-areas:
+        "netguru-h2 netguru-h2"
+        "address data"
+        "contact-h2 follow"
+        "contact follow"
+        "second second";
+    }
+
+    .page-bottom .footer-first-wrapper .company-data {margin-top: 0;}
+    .page-bottom .footer-first-wrapper .company-data, .page-bottom .footer-first-wrapper .follow-us-wrapper {
+        padding-left: 80px;
+    }
+
+    .page-bottom aside {
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .page-bottom aside .footer-aside-wrapper {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .page-bottom aside .footer-aside-wrapper .forbes {grid-column: 1 / 3;}
+    .page-bottom aside .footer-aside-wrapper .deloitte {grid-column: 3 / 5;}
+}
+
+@media screen and (min-width: 1024px) {
+    .page-bottom header, .page-bottom .footer-first-wrapper, .page-bottom .footer-first-wrapper .footer-second-wrapper, .page-bottom footer{
+        width: 920px;
+    }
+
+    .page-bottom .footer-first-wrapper {
+        grid-template-areas:
+        "netguru-h2 netguru-h2 contact-h2"
+        "address data contact"
+        "follow follow follow"
+        "second second second";
+    }
+
+    .page-bottom .footer-first-wrapper .contact-h2 {grid-area: contact-h2; width: 100%; margin-right: 0;}
+    .page-bottom .footer-first-wrapper .company-data, .page-bottom .footer-first-wrapper .follow-us-wrapper {
+        padding-left: 0;
+    }
+
+    .page-bottom .footer-first-wrapper .footer-second-wrapper {
+        display: grid;
+        grid-area: second;
+        grid-template-areas:
+        "certificates certificates certificates"
+        "corporation place security"
+        "corporation-span place-span security-span"
+        "partnerships partnerships partnerships"
+        "aws microsoft adyen"
+        "aws-span microsoft-span adyen-span";
+    }
+
+
+    .page-bottom aside {
+        margin: 0;
+    }
+    .page-bottom aside .footer-aside-wrapper {
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .page-bottom aside .footer-aside-wrapper .forbes {grid-column: 5 / 6;}
+    .page-bottom aside .footer-aside-wrapper .deloitte {grid-column: 6 / 7; padding-top: 16px;}
+
+    .page-bottom footer {
+        width: 1024px;
+        box-sizing: border-box;
+        padding: 0 10% 0 10%;
+        height: 100;
+        display: grid;
+        grid-template-areas:
+        "copy ul";
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-bottom footer ul {
+        grid-area: ul;
+        width: 100%;
+    }
+
+    .page-bottom footer ul li{
+        padding: 40px 0 40px 0;
+        width: 100px
+    }
+
+    .page-bottom footer .copyright {
+        grid-area: copy;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1366px) {
+    .page-bottom header, .page-bottom .footer-first-wrapper, .page-bottom .footer-first-wrapper .footer-second-wrapper{
+        width: 1200px;
+    }
+
+    .page-bottom .footer-first-wrapper {
+        grid-template-areas:
+        "netguru-h2 netguru-h2 contact-h2 follow"
+        "address data contact follow"
+        "second second second second";
+    }
+
+    .page-bottom .footer-first-wrapper .footer-second-wrapper {
+        display: grid;
+        grid-area: second;
+        grid-template-areas:
+        "certificates certificates certificates  partnerships partnerships partnerships"
+        "corporation place security aws microsoft adyen"
+        "corporation-span place-span security-span aws-span microsoft-span adyen-span";
+    }
+
+    .page-bottom .footer-first-wrapper .footer-second-wrapper h2  {margin-top: 50px;}
+>>>>>>> main
 }

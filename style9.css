@@ -2,15 +2,6 @@
     font-size: 12px;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    margin-left: 5%;
-    color: #4b4b4b;
-    line-height: 22px;
-}
-
-.page-bottom header {
-    margin: 20px 0 20px 0;
-=======
     box-sizing: border-box;
     color: #4b4b4b;
     line-height: 22px;
@@ -21,15 +12,11 @@
 .page-bottom header {
     margin: 40px 0 0 0;
     padding-left: 5%;
->>>>>>> main
 }
 
 .page-bottom .footer-first-wrapper {
     width: 40%;
-<<<<<<< HEAD
-=======
     padding-left: 5%;
->>>>>>> main
 }
 
 .page-bottom .footer-first-wrapper h2 {
@@ -39,14 +26,6 @@
     color: black;
 }
 
-<<<<<<< HEAD
-.page-bottom .footer-first-wrapper a {
-    text-decoration: none;
-    color: #4b4b4b;
-}
-
-.page-bottom .footer-first-wrapper a:hover {
-=======
 .page-bottom .footer-first-wrapper .company-address a, .page-bottom .footer-first-wrapper .contact a{
     text-decoration: none;
     color: #4b4b4b;
@@ -54,7 +33,6 @@
 }
 
 .page-bottom .footer-first-wrapper .company-address a:hover {
->>>>>>> main
     text-decoration: none;
     color: #00d563;
 }
@@ -64,8 +42,6 @@
     margin-top: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .page-bottom .footer-first-wrapper .contact a{
     border-bottom: 1px solid #00d563;
     padding-bottom: 2px;
@@ -75,7 +51,6 @@
 .page-bottom .footer-first-wrapper .contact a:hover{
     border-bottom: 3px solid #00d563;
 }
->>>>>>> main
 
 .page-bottom .footer-first-wrapper .follow-us-wrapper {
     display: grid;
@@ -85,8 +60,6 @@
     "gh in tw";
     width: 300px;
 }
-<<<<<<< HEAD
-=======
 .page-bottom .footer-first-wrapper .follow-us-wrapper a{
     width: 20px;
     height: 20px;
@@ -111,7 +84,6 @@
 
 .page-bottom .footer-first-wrapper .follow-us-wrapper a svg:hover {filter: invert(50%) sepia(84%) saturate(1292%) hue-rotate(108deg) brightness(102%) contrast(101%);}
 
->>>>>>> main
 
 .page-bottom .footer-first-wrapper .follow-us-wrapper h2 {grid-area: h2}
 .page-bottom .footer-first-wrapper .follow-us-wrapper .be {grid-area: be}
@@ -134,14 +106,6 @@
     color: black;
 }
 
-<<<<<<< HEAD
-.page-bottom .footer-second-wrapper .corporation {width: 65px; height: 90px; }
-.page-bottom .footer-second-wrapper .place {width: 55px; height: 80px;}
-.page-bottom .footer-second-wrapper .security {width: 65px; height: 65px;}
-.page-bottom .footer-second-wrapper .aws {width: 55px; height: 30px;}
-.page-bottom .footer-second-wrapper .microsoft {width: 120px; height: 30px;}
-.page-bottom .footer-second-wrapper .adyen {width: 70px; height: 30px;}
-=======
 .page-bottom .footer-second-wrapper .corporation {width: 65px; height: 90px; grid-area: corporation;}
 .page-bottom .footer-second-wrapper .place {width: 55px; height: 80px; grid-area: place;}
 .page-bottom .footer-second-wrapper .security {width: 65px; height: 65px; grid-area: security;}
@@ -155,14 +119,11 @@
 .page-bottom .footer-second-wrapper .aws-span {grid-area: aws-span;}
 .page-bottom .footer-second-wrapper .microsoft-span {grid-area: microsoft-span;}
 .page-bottom .footer-second-wrapper .adyen-span {grid-area: adyen-span;} 
->>>>>>> main
 
 .page-bottom .footer-second-wrapper span {
     padding: 10px 0 20px 0;
     width: 70%;
     font-size: 11px;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -396,6 +357,10 @@
         width: 1200px;
     }
 
+    .page-bottom footer {
+        padding: 0;
+    }
+
     .page-bottom .footer-first-wrapper {
         grid-template-areas:
         "netguru-h2 netguru-h2 contact-h2 follow"
@@ -413,5 +378,4 @@
     }
 
     .page-bottom .footer-first-wrapper .footer-second-wrapper h2  {margin-top: 50px;}
->>>>>>> main
 }

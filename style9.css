@@ -396,6 +396,10 @@
         width: 1200px;
     }
 
+    .page-bottom footer {
+        padding: 0;
+    }
+
     .page-bottom .footer-first-wrapper {
         grid-template-areas:
         "netguru-h2 netguru-h2 contact-h2 follow"
